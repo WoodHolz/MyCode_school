@@ -1,0 +1,29 @@
+#! /usr/bin/env/bpftrace
+#include <linux/socket.h>
+#include <net/sock.h>
+#include <linux/udp.h>
+#include <linux/skbuff.h>
+#include <linux/ip.h>
+
+
+kprobe:__udp4_lib_rcv
+{
+    $skb = (struct sk_buff *) arg0;
+    /*  
+     *  UDP 数据包校验和正确 arg2为int proto
+     *  只看能保留下来的
+     *  if (proto == IPPROTO_UDP) {
+     *      if (ulen < sizeof(*uh) || pskb_trim_rcsum(skb, ulen))
+     *          goto short_packet;
+     *      uh = udp_hdr(skb);
+     *      }
+     */
+    if(arg2 == IPPROTO_UDP){
+        $iph = (struct iphdr *)($skb->head + $skb->network_header);
+        //printf("KERN_INFO:%u.%u.%u.%u\n", NIPQUAD($iph->daddr));
+        printf("ip dst:%pI4\n", ($iph->daddr));//这是专门打印ip的格式，注意，参数为指针。
+        //@dir = ntop(AF_INET, $iph->daddr);
+        //$pro = (struct udphdr *)($skb->head + $skb->network_header);
+    }
+    //printf("rcv: %-18s %lx %s \n", comm, $pro, @dir);
+}

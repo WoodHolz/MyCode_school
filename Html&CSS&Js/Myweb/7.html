@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+<style>
+  body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+
+	input[type=text], select, textarea {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ctr{
+	background-image: url("Image/page-banner.jpg");
+	margin: 15px auto; 
+	 padding: 15px; 
+	 width: 950px;
+	 overflow: hidden;
+	 border-radius: 20px;
+	}
+</style>
+</head>
+<body>
+		<nav id="nav" class="nav">
+        <div>
+            <div>
+              <ul>
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="2.html" >自我介绍</a></li>
+                <li><a href="3.html" >在学了在学了</a></li>
+                <li><a href="4.html" >读书</a></li>
+                <li><a href="5.html" >观察</a></li> 
+                <li><a href="6.html" >大佬的文章</a></li>
+				<li><a href="#" >联系我</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+  <div style="text-align:center">
+    <h2>联系我们</h2>
+    <p>请填写信息:</p>
+  </div>
+ 
+    <div class="column ctr">
+      <form>
+        
+        <input type="text" id="fname" name="name" placeholder="您的称呼..">
+        
+        <input type="text" id="phone" name="phone" placeholder="联系电话..">
+        
+        <select id="country" name="country">
+          <option value="xa">西安</option>
+          <option value="cq">重庆</option>
+          <option value="gd">广东</option>
+        </select>
+        <textarea id="subject" name="subject" placeholder="留言.." style="height:170px"></textarea>
+        <input type="submit" value="提交">
+      </form>
+    </div>
+  
+</div>
+</body>
+</html>

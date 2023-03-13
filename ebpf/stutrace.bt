@@ -1,0 +1,31 @@
+#!/usr/bin/env bpftrace
+//#!/usr/local/bin/bpftrace
+
+BEGIN
+{
+    printf("检测管理系统creat()函数的运行时间\n");
+}
+uprobe:./student:creat
+{
+    printf("\n开始\n");
+    @start=nsecs;
+    printf("pid: %ld, 开始时间:%s\t", pid, strftime("%H:%M:%S", @start));
+}
+
+uretprobe:./student:creat
+/@start/
+{
+    @endtime=nsecs;
+    @cost=@endtime-@start;
+    printf("结束时间:%s, 运行时间: %ldms\n", strftime("%H:%M:%S", @endtime), (@endtime-@start) / 1000000);
+    /**
+    *
+    *为使开始和结束时间显示更加直观,使用strftime()将获取的时间转换为时刻的格式.
+    *nsecs获取的时间是以纳秒为基本单位,因此在显示运行时间时将其转化为毫秒输出.
+    */
+    delete(@start);
+}
+END 
+{
+    printf("\n检测结束\n");
+}

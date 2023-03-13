@@ -1,0 +1,73 @@
+﻿  stu.cpp
+S:\Code\stu\stu.cpp(25,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(38,13): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(79,13): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(117,18): error C2440: “return”: 无法从“stu *”转换为“int”
+S:\Code\stu\stu.cpp(117,13): message : 没有使该转换得以执行的上下文
+S:\Code\stu\stu.cpp(119,1): error C2617: “creat”: return 语句不一致
+S:\Code\stu\stu.cpp(24): message : 参见“creat”的声明
+S:\Code\stu\stu.cpp(35,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(40,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(42,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(55,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(76,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(81,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(83,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(96,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(125,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(131,5): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(143,67): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(144,67): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(187,61): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(188,61): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(244,1): warning C4508: “fix”: 函数应返回一个值；假定“void”返回类型
+S:\Code\stu\stu.cpp(140,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(145,67): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(150,21): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(153,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(158,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(167,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(176,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(189,61): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(193,21): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(196,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(201,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(210,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(219,25): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(248,1): error C2059: 语法错误:“delete”
+S:\Code\stu\stu.cpp(249,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+S:\Code\stu\stu.cpp(249,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+S:\Code\stu\stu.cpp(291,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(297,5): error C3861: “gets”: 找不到标识符
+S:\Code\stu\stu.cpp(313,1): warning C4508: “search”: 函数应返回一个值；假定“void”返回类型
+S:\Code\stu\stu.cpp(324,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(445,1): warning C4508: “sort”: 函数应返回一个值；假定“void”返回类型
+S:\Code\stu\stu.cpp(330,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(361,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(362,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(363,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(383,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(384,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(385,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(406,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(407,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(408,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(433,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(434,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(435,21): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(451,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(466,1): warning C4508: “display”: 函数应返回一个值；假定“void”返回类型
+S:\Code\stu\stu.cpp(484,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+S:\Code\stu\stu.cpp(491,9): error C2664: “int fscanf(FILE *const ,const char *const ,...)”: 无法将参数 1 从“const char [18]”转换为“FILE *const ”
+S:\Code\stu\stu.cpp(491,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(1199,37): message : 参见“fscanf”的声明
+S:\Code\stu\stu.cpp(506,17): error C2440: “return”: 无法从“stu *”转换为“int”
+S:\Code\stu\stu.cpp(506,12): message : 没有使该转换得以执行的上下文
+S:\Code\stu\stu.cpp(508,1): error C2617: “read”: return 语句不一致
+S:\Code\stu\stu.cpp(483): message : 参见“read”的声明
+S:\Code\stu\stu.cpp(528,18): error C2440: “=”: 无法从“int”转换为“stu *”
+S:\Code\stu\stu.cpp(528,14): message : 从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+S:\Code\stu\stu.cpp(554,32): error C2440: “=”: 无法从“int”转换为“stu *”
+S:\Code\stu\stu.cpp(554,28): message : 从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+S:\Code\stu\stu.cpp(524,10): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+S:\Code\stu\stu.cpp(534,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

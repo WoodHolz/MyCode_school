@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="time()">获取当前系统时间</button>
+    <script>
+        function time() 
+        {
+            var myt = new Date();
+            var yr = myt.getFullYear();
+            var mon = myt.getMonth() + 1;
+            var day = myt.getDate();
+            var hr = myt.getHours();
+            var min = myt.getMinutes();
+            var sec = myt.getSeconds();
+            document.write("今天日期: " + yr + "年" + mon + "月" + day + "日" + "\t" +  "当前时间: " + hr + "时" + min + "分" + sec + "秒");
+        }
+    </script>
+</body>
+</html>

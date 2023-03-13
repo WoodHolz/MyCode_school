@@ -1,0 +1,21 @@
+#! /usr/bin/env bpftrace
+BEGIN{
+    printf("||   comm    |   runtime   ||\n");
+    }
+kprobe:__alloc_skb{
+    if(comm == "Xwayland"){
+        @strtime = nsecs;
+        
+    }
+}
+
+kretprobe:__alloc_skb
+/@strtime/ 
+{
+    if(comm == "Xwayland"){
+        @runtime = nsecs - @strtime;
+        printf("|| %s | %-8d ||\n", comm, @runtime);
+        @hist = lhist(@runtime, 0, 15000, 1000);
+        clear(@strtime);
+    }
+}

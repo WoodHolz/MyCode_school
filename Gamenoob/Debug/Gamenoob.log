@@ -1,0 +1,10 @@
+﻿  bull.cpp
+D:\Software\VisualStudio2022\VC\Tools\MSVC\14.31.31103\include\graphics.h(1,1): warning C4828: 文件包含在偏移 0x19d3 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+S:\Code\Cvs\Gamenoob\bull.cpp(71,22): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(71,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(71,14): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(72,47): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(72,38): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(72,25): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(72,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+S:\Code\Cvs\Gamenoob\bull.cpp(53,7): error C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.

@@ -1,0 +1,9 @@
+#! /usr/bin/env/bpftrace
+BEGIN
+{
+    printf("test begin!\n");
+}
+kretprobe: ip_route_input_noref
+{
+    printf("comm: %s\n", comm);
+}

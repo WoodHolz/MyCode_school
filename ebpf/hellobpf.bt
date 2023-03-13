@@ -1,0 +1,11 @@
+#! /usr/bin/env bpftrace
+    BEGIN {printf("welcome to bpftrace world!\n")}
+    kprobe:vfs_read{
+    @str = nsecs;
+    }
+    kretprobe:vfs_read
+    /@str/
+    {
+    printf("%s %d\n", comm, nsecs - @str );
+    }
+    END{printf("\nGoodbye!")} 

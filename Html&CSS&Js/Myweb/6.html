@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+<style>
+  section { background-color: darkseagreen;
+	  		margin: 15px auto; 
+	  		padding: 15px; 
+	  		width: 1050px;
+	  		overflow: hidden;
+	  		border-radius: 20px;
+		}
+  body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+	  		background-color: palegreen;
+        }
+	.wid{
+		width:700px;
+	}
+</style>
+</head>
+<body>
+		<nav id="nav" class="nav">
+        <div>
+            <div>
+              <ul>
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="2.html" >自我介绍</a></li>
+                <li><a href="3.html" >在学了在学了</a></li>
+                <li><a href="4.html" >读书</a></li>
+                <li><a href="5.html" >观察</a></li> 
+                <li><a href="#" >大佬的文章</a></li>
+				<li><a href="7.html" >联系我</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+<section class="wid">
+	<article >
+			
+			<div>
+				<h2 class="art-txt">&nbsp;&nbsp; 文章</h2>
+				<div class="art-model">
+				  <h3><a href="https://blog.csdn.net/weixin_61631200/article/details/121659763?spm=1001.2014.3001.5502" >C语言数据类型探索（1）</a></h3>
+				  <dl class="img-txt">
+						<dt>
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/121659763?spm=1001.2014.3001.5502"><img src="Image/art-1.jpg"></a>
+						</dt>
+						<dd>
+							<p class="deatil">　　对于初涉C语言的人，看到题目，怎么也不会想到，输出竟然是完整的一句话。分析：数组为lnt类型，而输出时把该数组强制转换为char，int与char类型可相互转化，而0x代表16进制，这时我们看出端倪，即ASCII码,每两位对应一个字符，但为什么四个字符会有一个逗号呢？那是因为每个int元素开辟四个字节，而字符占一个字节。 为什么字符顺序是反的呢？</p>
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/121659763?spm=1001.2014.3001.5502" class="r">查看全文</a>
+							<br>
+						</dd>
+					</dl>
+				</div>
+				<div class="art-model">
+					<h3><a href="https://blog.csdn.net/weixin_61631200/article/details/121932794?spm=1001.2014.3001.5502" >C语言数据类型的探索（2）</a></h3>
+				  <dl class="img-txt">
+						<dt>
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/121932794?spm=1001.2014.3001.5502"><img src="Image/art-2.jpg"></a>
+						</dt>
+						<dd>
+							<p class="deatil">　　进行算术运算（加、减、乘、除、取余以及符号运算）时，不同类型数据必须转换成同 一类型的数据才能运算，算术转换原则为：整型提升：对于所有比int小的类型，包括char, signed char, unsigned char, short, unsigned short,首先会提升为int类型。在进行运算时，以表达式中最长类型为主，将其他类型位据均转换成该类型.</p>
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/121932794?spm=1001.2014.3001.5502" class="r">查看全文</a>
+							<br>
+						</dd>
+					</dl>
+				</div>
+				<div class="art-model">
+					<h3><a href="https://blog.csdn.net/weixin_61631200/article/details/124273343?spm=1001.2014.3001.5502">把线程概念讲清</a></h3>
+					
+				  <dl class="img-txt">
+						<dt> 
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/124273343?spm=1001.2014.3001.5502"><img src="Image/art-3.jpg"></a>
+						</dt>
+						<dd>
+							<p class="deatil">　　1.线程是一个轻量级进程(light-weight process)，也有PCB,创建线程使用的底层函数和进程一样，都是clone。2.从内核里看进程和线程是一样的，都有各自不同的PCB，但是PCB中指向内存资源的三级页表是相同的。</p>
+							<a href="https://blog.csdn.net/weixin_61631200/article/details/124273343?spm=1001.2014.3001.5502" class="r">查看全文</a>
+							<br>
+						</dd>
+					</dl>
+				</div>
+
+		</div>
+		</article>
+	</section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#! /usr/bin/env/bpftrace
+#include <linux/socket.h>
+#include <net/sock.h>
+#include <linux/tcp.h>
+#include <linux/skbuff.h>
+#include <linux/ip.h>
+#include <net/protocol.h>
+#include <linux/types.h>
+
+//网络层是为了验证临时加的
+kprobe: ip_rcv
+// comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg0;
+    printf("ip_rcv: %s %x sklen:%x\n", comm, 
+    (struct iphdr *)($skb->head + $skb->transport_header),
+    $skb->len);
+}
+
+kprobe: ip_local_deliver
+// comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg0;
+    printf("ip_local_deliver: %s %x sklen:%x\n", comm, 
+    (struct iphdr *)($skb->head + $skb->transport_header),
+    $skb->len);
+}
+
+kprobe: ip_local_deliver_finish
+// comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg2;
+    printf("ip_local_deliver_finish: %s %x sklen:%x\n", comm, 
+    (struct iphdr *)($skb->head + $skb->transport_header),
+    $skb->len);
+}
+
+kprobe: tcp_v4_rcv
+// comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg0;
+    /*
+     *th = tcp_hdr(skb)
+     *tcp_hdr结构定义如下：
+     *static inline struct tcphdr *tcp_hdr(const struct sk_buff *skb)
+     *  {
+	 *      return (struct tcphdr *)skb_transport_header(skb);
+     *  }
+     *而skb_transport_header的定义又为：
+     *static inline unsigned char *skb_transport_header(const struct sk_buff *skb) 
+     *  {
+	 *      DEBUG_NET_WARN_ON_ONCE(!skb_transport_header_was_set(skb));
+	 *      return skb->head + skb->transport_header;
+     *  }
+     *  因为是内联函数，无法跟踪。直接定义其返回结果
+     */
+    $skb_transport_header = $skb->head + $skb->transport_header;
+    $th = (struct tcphdr *)$skb_transport_header;//@th = (struct tcphdr *)$skb->data;
+    //同理可得
+    $iph = (struct iphdr *)($skb->head + $skb->network_header);
+    @dir = ntop(AF_INET,$iph->daddr);
+    printf("tcp_v4_rcv: %-18s %x %s len:%x, sklen:%x\n", comm, $th, @dir, $th->doff, $skb->len);
+    
+}
+
+kprobe: tcp_rcv_established
+/ comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg1;
+    $th = (struct tcphdr *)$skb->data;
+    printf("tcp_rcv_established: %-18s %x len:%x, sklen:%x\n", comm, $th, $th->doff, $skb->len);
+}
+
+kprobe: tcp_queue_rcv
+/ comm == "clash-linux" /
+{
+    $skb = (struct sk_buff *)arg1;
+    printf("tcp_queue_rcv: %-18s  sklen:%x\n", comm, $skb->len);
+}
+
+kprobe: tcp_recvmsg
+/ comm == "clash-linux" /
+{
+    printf("tcp_recvmsg: %-18s %x\n", comm, arg2);
+}
