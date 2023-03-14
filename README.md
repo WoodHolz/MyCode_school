@@ -2,6 +2,10 @@
 
 XUPT_code_mycode
 
+## 2023/3/14
+
+prepare for the Algorithm competition
+
 ## 2023/3/13
 
 delete my information and turn it over
@@ -26,13 +30,19 @@ some my ebpf program on Ubuntu
 
 ## 2022/11/21 Python homework_4
 
-## 2022/11/14 Linked_List reverse and it's length
+## 2022/11/14
+
+Linked_List reverse and it's length
 
 ## 2022/11/2 binary_tree
 
-## 2022/10/26 jupyter notebook code upload
+## 2022/10/26
 
-## 2022/9/20 一些见闻
+jupyter notebook code upload
+
+## 2022/9/20
+
+一些见闻
 
 ## 2022/8/15 数模第二次训练
 
