@@ -41,17 +41,17 @@ kprobe: __udp4_lib_rcv
  *  __udp4_lib_lookup_skb结构查询
  */
 kprobe: udp_queue_rcv_skb
-/ comm == "systemd-resolve" /
+/ comm == "apt-get" /
 {
     $sk = (struct sock *) arg0;
     $skb = (struct sk_buff *) arg1;
-    $pro = (struct udphdr *)($skb->head + $skb->network_header);
+    $pro = ntop($skb->head + $skb->network_header);
     @up = (struct udp_sock *)$sk;
-    printf("que: %-18s %x\n", comm, $pro);
+    printf("que: %-18s %s\n", comm, $pro);
 }
 //接收处理过程完成
 kprobe: udp_recvmsg
-/ comm == "systemd-resolve" / 
+/ comm == "apt-get" / 
 {
     $sk = ((struct sock *) arg1);
     printf("msg: %-18s\n", comm);
