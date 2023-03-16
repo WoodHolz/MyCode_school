@@ -2,6 +2,10 @@
 
 XUPT_code_mycode
 
+## 2023/3/16
+
+emmm read r-Core Tutorial
+
 ## 2023/3/14
 
 prepare for the Algorithm competition
