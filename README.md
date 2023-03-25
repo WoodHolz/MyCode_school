@@ -2,10 +2,13 @@
 
 XUPT_code_mycode
 
+## 2023/3/25
+
+sad day failed on exam :-(
 
 ## 2023/3/20
 
-hello cargo 
+hello cargo
 
 ## 2023/3/18
 
