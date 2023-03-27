@@ -2,9 +2,13 @@
 
 XUPT_code_mycode
 
+## 2023/3/27
+
+join the gitclassroom of uCore comp
+
 ## 2023/3/25
 
-sad day failed on exam :-(
+sad day failed on exam :-( ; so let's learn rust
 
 ## 2023/3/20
 
