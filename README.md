@@ -2,6 +2,10 @@
 
 XUPT_code_mycode
 
+## 2023/3/29
+
+some practice
+
 ## 2023/3/27
 
 join the gitclassroom of uCore comp
