@@ -2,6 +2,10 @@
 
 XUPT_code_mycode
 
+## 2023/4/6
+
+hello gitee
+
 ## 2023/3/29
 
 some practice
