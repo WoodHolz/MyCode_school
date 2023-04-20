@@ -2,6 +2,10 @@
 
 XUPT_code_mycode
 
+## 2023/4/20
+
+pass ucore ch3
+
 ## 2023/4/8
 
 finish 3 parts of rustlings
